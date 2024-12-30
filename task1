@@ -1,0 +1,596 @@
+CREATE DATABASE school;
+USE school;
+CREATE TABLE Students (
+student
+id INT PRIMARY KEY AUTO
+_
+_
+first
+_
+name VARCHAR(50),
+last
+_
+name VARCHAR(50),
+gender VARCHAR(10),
+dob DATE,
+email VARCHAR(100),
+phone VARCHAR(15),
+address VARCHAR(255)
+INCREMENT ,
+);
+CREATE TABLE Courses (
+course
+id INT PRIMARY KEY AUTO
+_
+_
+INCREMENT ,
+course
+course
+course
+_
+name VARCHAR(100),
+_
+code VARCHAR(10),
+_
+description TEXT
+);
+CREATE TABLE Enrollments (
+enrollment
+id INT PRIMARY KEY AUTO
+INCREMENT ,
+_
+_
+student
+id INT ,
+_
+course
+id INT ,
+_
+grade CHAR(2),
+enrollment
+date DATE,
+_
+FOREIGN KEY (student
+_
+id) REFERENCES Students(student
+_
+FOREIGN KEY (course
+_
+id) REFERENCES Courses(course
+_
+id)
+id),
+);
+-- Students
+INSERT INTO Students (first
+name, last
+_
+_
+name, gender, dob, email, phone, address)
+VALUES
+('Amit'
+'Sharma'
+,
+,
+'Male'
+,
+'2000-05-10'
+,
+'amit.sharma@example.com'
+,
+'1234567890'
+,
+'Mumbai'),
+('Priya'
+'Verma'
+,
+,
+('Raj'
+'Kumar'
+,
+,
+('Sanya'
+,
+'Gupta'
+'Female'
+'2001-08-12'
+,
+,
+'Male'
+'2000-11-20'
+,
+,
+'Female'
+'1999-12-22'
+,
+,
+,
+'priya.verma@example.com'
+'2345678901'
+,
+,
+'Delhi'),
+'raj.kumar@example.com'
+'3456789012'
+,
+,
+'Chennai'),
+'sanya.gupta@example.com'
+'4567890123'
+,
+,
+'Bangalore'),
+('Arjun'
+,
+'Singh'
+,
+('Neha'
+'Patel'
+,
+,
+'Male'
+,
+'Female'
+,
+'2001-04-30'
+,
+'2002-02-14'
+,
+'arjun.singh@example.com'
+,
+'neha.patel@example.com'
+,
+'5678901234'
+,
+'6789012345'
+,
+'Jaipur'),
+'Ahmedabad'),
+('Vikram'
+,
+'Reddy'
+,
+'Male'
+,
+'2000-06-05'
+,
+'vikram.reddy@example.com'
+,
+'7890123456'
+,
+'Hyderabad'),
+('Simran'
+'Bhatia'
+,
+,
+'Female'
+,
+'2001-09-19'
+,
+'simran.bhatia@example.com'
+,
+'8901234567'
+,
+'Lucknow'),
+('Rahul'
+'Mehta'
+,
+,
+('Ritika'
+,
+'Chopra'
+,
+'Male'
+,
+'Female'
+,
+'2000-01-23'
+,
+'2001-07-25'
+,
+'rahul.mehta@example.com'
+,
+'ritika.chopra@example.com'
+,
+'9012345678'
+,
+'1023456789'
+,
+'Kolkata'),
+'Noida');
+-- Courses
+INSERT INTO Courses (course
+name, course
+code, course
+_
+_
+_
+description)
+VALUES
+('Data Structures'
+'CS101'
+,
+,
+'Introduction to Data Structures'),
+('Algorithms'
+'CS102'
+,
+,
+'Design and Analysis of Algorithms'),
+('Database Systems'
+'CS103'
+,
+,
+'Basics of Database Management Systems'),
+('Operating Systems'
+'CS104'
+,
+,
+'Introduction to Operating Systems'),
+('Computer Networks'
+'CS105'
+,
+,
+'Basics of Computer Networks'),
+('Software Engineering'
+'CS106'
+,
+,
+'Fundamentals of Software Engineering'),
+('Web Development'
+'CS107'
+,
+,
+'Introduction to Web Development'),
+('Machine Learning'
+'CS108'
+,
+,
+'Basics of Machine Learning'),
+('Artificial Intelligence'
+'CS109'
+,
+,
+'Introduction to AI'),
+('Cyber Security'
+'CS110'
+,
+,
+'Introduction to Cyber Security');
+-- Enrollments
+INSERT INTO Enrollments (student
+id, course
+_
+_
+id, grade, enrollment
+_
+VALUES
+(1, 1,
+'A'
+,
+'2023-01-10'),
+(1, 2,
+'B'
+,
+'2023-01-12'),
+(2, 3,
+'A'
+,
+'2023-02-15'),
+(2, 4,
+'B+'
+,
+'2023-02-18'),
+(3, 1,
+'A-
+'
+,
+'2023-03-12'),
+(3, 5,
+'B'
+,
+'2023-03-14'),
+(4, 2,
+'B+'
+,
+'2023-04-05'),
+(4, 6,
+'A'
+,
+'2023-04-07'),
+(5, 7,
+'A'
+,
+'2023-05-01'),
+(5, 8,
+'B-
+'
+,
+'2023-05-02'),
+(6, 9,
+'C+'
+,
+'2023-06-10'),
+(6, 10,
+'B+'
+,
+'2023-06-12'),
+(7, 4,
+'A+'
+,
+'2023-07-14'),
+(7, 5,
+'A-
+'
+,
+'2023-07-15'),
+(8, 1,
+'B'
+,
+'2023-08-10'),
+(8, 2,
+'A'
+,
+'2023-08-11'),
+(9, 3,
+'B-
+'
+,
+'2023-09-01'),
+(9, 6,
+'A+'
+,
+'2023-09-02'),
+(10, 7,
+'A-
+'
+,
+'2023-10-01'),
+(10, 8,
+'B+'
+,
+'2023-10-03'),
+-- Adding 30 more entries similarly...
+(1, 9,
+'B'
+,
+'2023-11-12'),
+(2, 10,
+'C'
+,
+'2023-11-13'),
+(3, 3,
+'A-
+'
+,
+'2023-12-20');
+date)
+SELECT * FROM Students;
+SELECT s.first
+name, s.last
+name
+_
+_
+FROM Students s
+JOIN Enrollments e ON s.student
+id = e.student
+_
+JOIN Courses c ON e.course
+id = c.course
+id
+_
+_
+WHERE c.course
+name = 'Data Structures';
+_
+_
+id
+SELECT * FROM Courses;
+SELECT grade FROM Enrollments WHERE student
+_
+id = 1;
+SELECT s.first
+name, s.last
+_
+_
+name, e.grade
+FROM Students s
+JOIN Enrollments e ON s.student
+id = e.student
+_
+JOIN Courses c ON e.course
+id = c.course
+id
+_
+_
+WHERE c.course
+_
+name = 'Machine Learning';
+_
+id
+SELECT c.course
+_
+name, COUNT(e.student
+_
+id) AS student
+_
+count
+FROM Courses c
+LEFT JOIN Enrollments e ON c.course
+id = e.course
+_
+_
+GROUP BY c.course
+name;
+id
+_
+SELECT DISTINCT s.first
+name, s.last
+_
+_
+FROM Students s
+JOIN Enrollments e ON s.student
+WHERE e.grade = 'A';
+name
+id = e.student
+id
+_
+_
+SELECT c.course
+name
+_
+FROM Courses c
+JOIN Enrollments e ON c.course
+JOIN Students s ON e.student
+id = e.course
+id
+_
+id = s.student
+_
+id
+WHERE s.first
+_
+name = 'Amit' AND s.last
+_
+_
+_
+name = 'Sharma';
+SELECT s.first
+name, s.last
+name
+_
+_
+FROM Students s
+JOIN Enrollments e ON s.student
+_
+GROUP BY s.student
+id
+_
+HAVING COUNT(e.course
+_
+id) > 3;
+id = e.student
+id
+_
+SELECT c.course
+_
+name, AVG(CASE
+WHEN e.grade = 'A' THEN 4
+WHEN e.grade = 'B' THEN 3
+WHEN e.grade = 'C' THEN 2
+WHEN e.grade = 'D' THEN 1
+ELSE 0 END) AS average
+_grade
+FROM Courses c
+JOIN Enrollments e ON c.course
+GROUP BY c.course
+name;
+id = e.course
+_
+_
+_
+id
+SELECT s.first
+name, s.last
+_
+_
+name, AVG(CASE
+WHEN e.grade = 'A' THEN 4
+WHEN e.grade = 'B' THEN 3
+WHEN e.grade = 'C' THEN 2
+WHEN e.grade = 'D' THEN 1
+ELSE 0 END) AS avg_grade
+FROM Students s
+JOIN Enrollments e ON s.student
+GROUP BY s.student
+id
+_
+ORDER BY avg_grade DESC
+LIMIT 3;
+id = e.student
+id
+_
+_
+SELECT c.course
+_
+name, COUNT(e.student
+_
+id) AS student
+_
+FROM Courses c
+JOIN Enrollments e ON c.course
+id = e.course
+id
+_
+_
+GROUP BY c.course
+name
+_
+ORDER BY student
+count DESC
+count
+_
+LIMIT 1;
+SELECT s.first
+name, s.last
+name
+_
+_
+FROM Students s
+LEFT JOIN Enrollments e ON s.student
+_
+WHERE e.student
+id IS NULL;
+id = e.student
+_
+id
+_
+SELECT c.course
+_
+name, MAX(CASE
+WHEN e.grade = 'A' THEN 4
+WHEN e.grade = 'B' THEN 3
+WHEN e.grade = 'C' THEN 2
+WHEN e.grade = 'D' THEN 1
+ELSE 0 END) AS highest
+_grade
+FROM Courses c
+JOIN Enrollments e ON c.course
+GROUP BY c.course
+name;
+_
+id = e.course
+id
+_
+_
+SELECT s.first
+name, s.last
+name
+_
+_
+FROM Students s
+JOIN Enrollments e1 ON s.student
+_
+JOIN Enrollments e2 ON s.student
+_
+JOIN Courses c1 ON e1.course
+_
+JOIN Courses c2 ON e2.course
+id = e1.student
+id
+_
+id = e2.student
+id
+_
+id = c1.course
+id
+_
+id = c2.course
+id
+_
+_
+WHERE c1.course
+name = 'Data Structures' AND c2.course
+_
+_
+name = 'Algorithms';
