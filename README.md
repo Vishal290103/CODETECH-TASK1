@@ -24,7 +24,7 @@ Project Overview:
 
 <img width="510" alt="Screenshot 2024-12-30 at 3 54 13 PM" src="https://github.com/user-attachments/assets/fef07fb9-60b9-4997-95e4-0834e15e586f" />
 
-project:Student Management System Screenshot 2024-12-29 at 7 48 47 PM Screenshot 2024-12-30 at 1 08 04 PM Screenshot 2024-12-29 at 7 49 01 PM Screenshot 2024-12-29 at 7 49 16 PM Screenshot 2024-12-29 at 7 49 28 PM Screenshot 2024-12-29 at 7 50 16 PM Screenshot 2024-12-29 at 7 50 26 PM Screenshot 2024-12-29 at 7 50 39 PM Screenshot 2024-12-29 at 7 51 02 PM
+project:Student Management System 
 
 Objective:This project is designed to manage student records in an educational setting. It involves creating a relational database to store and organize data about students, courses, and enrollments. The database allows the management of student information, the courses they are enrolled in, and their grades. By using SQL queries, this project helps in querying and manipulating data efficiently.
 
