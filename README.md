@@ -1,4 +1,9 @@
-Name: Vishal Yadav Company:CODETECH IT SOLUTIONS ID: CT0806HY Domain: SQL Duration: 12/12/24 to 12/1/25
+Name: Vishal Yadav 
+Company:CODETECH IT SOLUTIONS 
+ID: CT0806HY 
+Domain: SQL 
+Duration: 12/12/24 to 12/1/25
+
 Project Overview:
 
 <img width="534" alt="Screenshot 2024-12-30 at 3 51 51 PM" src="https://github.com/user-attachments/assets/386d7827-b643-41ad-8cd0-1fbcacd61103" />
