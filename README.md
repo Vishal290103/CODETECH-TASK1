@@ -30,6 +30,16 @@ Objective:This project is designed to manage student records in an educational s
 
 Features: 1)Student Management: ..Store personal details of students (e.g., name, gender, contact details, and address). ..Provide easy access to student records for administration and reporting.
 
-2)Course Management: ..Maintain a list of courses offered, including course codes and descriptions. ..Enable easy addition and modification of course details. 3)Enrollment System: ..Track which students are enrolled in which courses. ..Store grades for students in each course they are enrolled in. 4)Data Integrity: ..Use primary and foreign keys to establish relationships between students, courses, and enrollments. ..Ensure data consistency and avoid redundancy. 5)Queries for Data Retrieval: ..Simple queries to retrieve student information, course details, and grades. ..Advanced queries to analyze student performance, course popularity, and more. Key Points:
+2)Course Management: ..Maintain a list of courses offered, including course codes and descriptions. ..Enable easy addition and modification of course details. 
 
-a)Relational Database: The project uses a relational database system with three key tables: Students, Courses, and Enrollments. b)Normalization: The database is normalized to reduce redundancy and ensure data integrity. c)SQL Queries: Various SQL queries are used to manage, retrieve, and analyze data, from simple selections to complex joins and aggregations. d)Scalability: The system can handle more students, courses, and enrollments, with easy updates and modifications. f)User-friendly: Allows easy querying to fetch data, such as finding students enrolled in a specific course, retrieving the highest grade in a course, or listing students not enrolled in any courses.
+3)Enrollment System: ..Track which students are enrolled in which courses. ..Store grades for students in each course they are enrolled in. 
+
+4)Data Integrity: ..Use primary and foreign keys to establish relationships between students, courses, and enrollments. ..Ensure data consistency and avoid redundancy. 5)Queries for Data Retrieval: ..Simple queries to retrieve student information, course details, and grades. ..Advanced queries to analyze student performance, course popularity, and more. Key Points:
+
+a)Relational Database: The project uses a relational database system with three key tables: Students, Courses, and Enrollments.
+
+b)Normalization: The database is normalized to reduce redundancy and ensure data integrity. 
+
+c)SQL Queries: Various SQL queries are used to manage, retrieve, and analyze data, from simple selections to complex joins and aggregations. 
+
+d)Scalability: The system can handle more students, courses, and enrollments, with easy updates and modifications. f)User-friendly: Allows easy querying to fetch data, such as finding students enrolled in a specific course, retrieving the highest grade in a course, or listing students not enrolled in any courses.
